@@ -12,6 +12,8 @@ const mainContent = document.querySelector(".main-content");
 const Card = (data) => {
   const imgData = data[0];
 
+  const date = new Date(imgData.created_at);
+
   const markup = `
     <figure class="image">
       <img
