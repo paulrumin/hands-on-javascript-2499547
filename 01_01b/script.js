@@ -36,7 +36,9 @@ const Card = (data) => {
           </p>
           <p>
             Uploaded on
-            <time class="image__date" datetime="">${imgData.created_at}</time>
+            <time class="image__date" datetime="{imgData.created_at}">
+            ${date.toLocaleString("en-US")}
+            </time>
 
           </p>
           <p>
